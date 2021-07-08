@@ -1,0 +1,10 @@
+.banner_container {
+    width: 1360px;
+    margin: 0 auto;
+    min-height: 100px;
+    background-color: rgb(255, 223, 223);
+
+    @media screen and (max-width: 1360px) {
+        width: 100% !important;
+    }
+}
