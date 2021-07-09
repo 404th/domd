@@ -1,0 +1,52 @@
+.cheeseburger-menu {
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 500px;
+    .cheeseburger-menu-outer {
+        background-color: transparent;
+
+        .cheeseburger-menu-inner {
+            background-color: transparent;
+            padding: 35px;
+
+            .sidebar_content {
+                .sidebar_content_header {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .sidebar_content_header_icon {
+                        width: 35px !important;
+                        height: 35px !important;
+                        color: black;
+                        padding: 6px;
+                        border-radius: 50%;
+
+                        &:hover {
+                            background-color: rgba($color: #fff, $alpha: 0.6);
+                        }
+
+                        &:active {
+                            background-color: rgba($color: #fff, $alpha: 1);
+                        }
+                    }
+
+                    .sidebar_content_header_img {
+                        user-select: none;
+                    }
+                }
+
+                .sidebar_content_navigator {
+                    padding: 100px 53px 53px 53px;
+                }
+            }
+        }
+    }
+}
+
+// When Sidebar opens
+.open {
+    .cheeseburger-menu-outer {
+        width: 500px !important;
+    }
+}
