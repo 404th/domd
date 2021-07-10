@@ -23,7 +23,7 @@ function Sidebar(props) {
                     />
                     <img
                         className={"sidebar_content_header_img"}
-                        src="./images/navbar/brand.png"
+                        src="./images/sidebar/brandd.jpg"
                         alt="for sidebar"
                         width={"170px"}
                         height={"50px"}

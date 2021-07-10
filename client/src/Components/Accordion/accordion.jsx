@@ -10,6 +10,15 @@ function Accordion() {
             panel.style.display = "none";
         } else {
             panel.style.display = "block";
+
+            for (let k = 1; k <= 6; k++) {
+                if (id !== `accordion${k}`) {
+                    let panelExcept = document.querySelector(
+                        `#accordion${k}panel`
+                    );
+                    panelExcept.style.display = "none";
+                }
+            }
         }
     }
 

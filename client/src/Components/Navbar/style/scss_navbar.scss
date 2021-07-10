@@ -9,11 +9,16 @@
     padding: 35px;
 
     @media screen and (max-width: 1360px) {
-        grid-template-columns: 110px 430px 380px auto;
+        grid-template-columns: auto 430px 380px auto;
     }
 
-    @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+    @media screen and (max-width: 1170px) {
         grid-template-columns: 110px auto auto auto;
+=======
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: auto auto auto auto;
+>>>>>>> parent of 2a449b8... Sidebar is ready
         padding: 20px;
     }
 
@@ -24,7 +29,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        grid-template-columns: 110px auto auto;
+        grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
         padding: 20px;
     }
@@ -33,13 +38,16 @@
         grid-column: 1/2;
         grid-row: 1/2;
         color: #fff;
-        user-select: none !important;
 
         @media screen and (max-width: 1360px) {
             margin-right: 20px;
         }
 
-        @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+        @media screen and (max-width: 1170px) {
+=======
+        @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
             grid-column: 1/2;
             margin-right: 20px;
         }
@@ -52,17 +60,6 @@
         .navbar_toggle_icon {
             width: 30px !important;
             height: 30px !important;
-            border-radius: 50%;
-            padding: 10px;
-            transition: 0.14s background-color;
-
-            &:hover {
-                background-color: rgb(49, 49, 49);
-            }
-
-            &:active {
-                background-color: rgb(97, 97, 97);
-            }
         }
     }
 
@@ -74,7 +71,11 @@
         flex-direction: row;
         flex-wrap: nowrap;
 
-        @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+        @media screen and (max-width: 1170px) {
+=======
+        @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
             flex-wrap: wrap;
             margin-right: 20px;
         }
@@ -89,9 +90,12 @@
         .navbar_brand_img {
             width: 174px;
             height: 45px;
-            user-select: none !important;
 
-            @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+            @media screen and (max-width: 1170px) {
+=======
+            @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
                 margin-bottom: 7.5px;
             }
 
@@ -112,7 +116,11 @@
             color: #fff;
             margin-left: 20px;
 
-            @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+            @media screen and (max-width: 1170px) {
+=======
+            @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
                 margin-left: 0px;
                 font-size: 12px;
                 display: block;
@@ -153,7 +161,11 @@
             margin-left: 10px;
         }
 
-        @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+        @media screen and (max-width: 1170px) {
+=======
+        @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
             margin-left: 0;
         }
 
@@ -197,17 +209,12 @@
                 justify-content: center;
                 background: rgba(255, 255, 255, 0.22);
                 margin-left: 5px;
-                user-select: none !important;
 
-                &:hover {
-                    background: rgba(255, 255, 255, 0.4);
-                }
-
-                &:active {
-                    background-color: rgba(255, 255, 255, 0.7);
-                }
-
-                @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+                @media screen and (max-width: 1170px) {
+=======
+                @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
                     background-color: transparent;
                     width: 100px !important;
                     padding: 6px;
@@ -249,7 +256,11 @@
             margin-left: 0;
         }
 
-        @media screen and (max-width: 1155px) {
+<<<<<<< HEAD
+        @media screen and (max-width: 1170px) {
+=======
+        @media screen and (max-width: 1100px) {
+>>>>>>> parent of 2a449b8... Sidebar is ready
             box-sizing: border-box;
             padding: 10px;
             margin-left: 0;
@@ -299,7 +310,6 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            user-select: none !important;
 
             @media screen and (max-width: 768px) {
                 display: none;
@@ -327,17 +337,6 @@
                         #fbd26a 84.9%,
                         #ffdc83 100%
                     );
-                }
-
-                &:active {
-                    background: linear-gradient(
-                        180deg,
-                        #e3a548 0%,
-                        #c17024 25%,
-                        #fbd26a 84.9%,
-                        #ffdc83 100%
-                    );
-                    opacity: 0.7;
                 }
             }
         }
