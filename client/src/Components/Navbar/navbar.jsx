@@ -2,13 +2,28 @@ import "./style/scss_navbar.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Sidebar from "../Sidebar/sidebar";
+import React from "react";
 
 function Navbar() {
     // library.add(faBars);
+
+    const [menuIsOpenB, setMenuIsOpenB] = React.useState(false);
+
+    const closeMenuFunc = () => {
+        setMenuIsOpenB(!menuIsOpenB);
+    };
+
     return (
         <nav className={"navbar"}>
             <div className={"navbar_toggle"}>
-                <FontAwesomeIcon className={"navbar_toggle_icon"} icon="bars" />
+                <FontAwesomeIcon
+                    className={"navbar_toggle_icon"}
+                    icon="bars"
+                    onClick={() => {
+                        setMenuIsOpenB(true);
+                    }}
+                />
             </div>
             <div className={"navbar_brand"}>
                 <img
@@ -75,6 +90,7 @@ function Navbar() {
                     </button>
                 </div>
             </div>
+            <Sidebar menuIsOpen={menuIsOpenB} closeMenu={closeMenuFunc} />
         </nav>
     );
 }
