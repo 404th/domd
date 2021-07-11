@@ -1,0 +1,90 @@
+.ucard_container {
+    width: 340px;
+    height: 476px;
+    // background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    margin: 15px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 815px) {
+        width: 300px;
+        height: 430px;
+    }
+
+    .ucard_container_p {
+        display: inline-block;
+        padding: 25px;
+        position: relative;
+
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 33px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        .ucard_container_p_div {
+            position: absolute;
+            top: 60%;
+            right: 10%;
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-color: #dda046;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
+
+    .ucard_container_btn {
+        width: 200px;
+        height: 46px;
+        margin-left: 25px;
+        outline: none !important;
+        border: none !important;
+
+        background: linear-gradient(
+            180deg,
+            #ffdc83 0%,
+            #fbd26a 25%,
+            #c17024 84.9%,
+            #e3a548 100%
+        );
+        transition: 0.3s;
+
+        &:hover {
+            background: linear-gradient(
+                180deg,
+                #e3a548 0%,
+                #c17024 25%,
+                #fbd26a 84.9%,
+                #ffdc83 100%
+            );
+        }
+
+        &:active {
+            background: linear-gradient(
+                180deg,
+                #ffdc83 0%,
+                #fbd26a 25%,
+                #c17024 84.9%,
+                #e3a548 100%
+            );
+        }
+
+        .ucard_container_btn_span {
+            margin-left: 20px;
+        }
+    }
+
+    .ucard_container_img {
+        width: 100%;
+    }
+}

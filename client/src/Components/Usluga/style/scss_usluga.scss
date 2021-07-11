@@ -1,0 +1,114 @@
+.usluga_wrapper {
+    width: 100%;
+    min-height: 100px;
+    background: #f4f4f4;
+    padding: 30px 300px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1679px) {
+        padding: 30px 200px;
+    }
+
+    @media screen and (max-width: 1525px) {
+        padding: 30px 50px;
+    }
+
+    .usluga_container {
+        width: 100%;
+        height: 100%;
+
+        .usluga_container_content {
+            padding: 0 80px;
+
+            @media screen and (max-width: 1360px) {
+                padding: 0 40px;
+            }
+
+            .usluga_container_content_p {
+                font-family: Roboto;
+                font-weight: 400;
+                font-family: Druk Text Wide;
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: 0em;
+                text-align: center;
+                font-style: normal;
+
+                @media screen and (max-width: 768px) {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 400;
+
+                    font-family: Druk Text Wide;
+                    font-size: 30px;
+                    line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                }
+
+                .usluga_container_content_p_span {
+                    font-family: Roboto;
+                    font-weight: 700;
+
+                    @media screen and (max-width: 768px) {
+                    }
+                }
+            }
+        }
+
+        .usluga_container_cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+
+            .rec-carousel-wrapper {
+                .rec-carousel {
+                    .rec-arrow-left {
+                        display: none !important;
+                        visibility: none !important;
+                    }
+                    .rec-arrow-right {
+                        display: none !important;
+                        visibility: none !important;
+                    }
+
+                    .rec-slider-container {
+                        background-color: transparent !important;
+                        box-shadow: none !important;
+
+                        .rec-slider {
+                            box-shadow: none !important;
+                            background-color: transparent !important;
+
+                            .rec-swipable {
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+
+                                .rec-carousel-item {
+                                    // background-color: transparent !important;
+                                    // box-shadow: none !important;
+
+                                    background: rgba(255, 255, 255, 0.6);
+                                    box-shadow: 0px 0px 74px
+                                        rgba(39, 17, 10, 0.16);
+
+                                    .rec-item-wrapper {
+                                        background-color: transparent !important;
+                                        box-shadow: none !important;
+
+                                        div {
+                                            background-color: transparent !important;
+                                            box-shadow: none !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
