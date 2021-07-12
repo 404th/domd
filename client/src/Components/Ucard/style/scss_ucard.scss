@@ -8,6 +8,17 @@
     display: inline-block;
     margin: 15px;
     box-sizing: border-box;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #dda046 !important;
+
+        .ucard_container_p {
+            .ucard_container_p_div {
+                background-color: white;
+            }
+        }
+    }
 
     @media screen and (max-width: 815px) {
         width: 300px;

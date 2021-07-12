@@ -6,6 +6,7 @@ import Media from "../../Components/Media/media";
 import Worth from "../../Components/Worth/worth";
 import Gallery from "../../Components/Gallery/gallery";
 import Manager from "../../Components/Manager/manager";
+import Counter from "../../Components/Counter/counter";
 
 function Main() {
     return (
@@ -16,6 +17,7 @@ function Main() {
             <Worth />
             <Gallery />
             <Manager />
+            <Counter />
         </>
     );
 }

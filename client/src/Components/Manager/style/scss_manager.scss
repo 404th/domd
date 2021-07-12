@@ -1,10 +1,15 @@
 .manager_wrapper {
     width: 100%;
 
+    background-image: url("./bg_manager.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .manager_container {
         width: 1360px;
         box-sizing: border-box;
         margin: 0 auto;
+        padding: 70px 0;
 
         @media screen and (max-width: 1375px) {
             width: 100%;
@@ -140,4 +145,131 @@
             }
         }
     }
+}
+
+.manager_container_objective_info-cover {
+    .rec-carousel-wrapper {
+        .rec-carousel {
+            // position: relative;
+
+            .rec-arrow-left {
+                // display: none !important;
+                // visibility: none !important;
+                // position: absolute;
+                // bottom: 0;
+                // left: 0;
+            }
+            .rec-arrow-right {
+                // display: none !important;
+                // visibility: none !important;
+                // position: absolute;
+                // bottom: 0;
+                // left: 0;
+            }
+
+            .rec-slider-container {
+                background-color: transparent !important;
+                box-shadow: none !important;
+
+                .rec-slider {
+                    box-shadow: none !important;
+                    background-color: transparent !important;
+
+                    .rec-swipable {
+                        background-color: transparent !important;
+                        box-shadow: none !important;
+
+                        .rec-carousel-item {
+                            // background-color: transparent !important;
+                            // box-shadow: none !important;
+
+                            background: #ffffff;
+                            box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.25);
+
+                            .rec-carousel-wrapper {
+                                .rec-carousel {
+                                    .rec-arrow-left {
+                                        display: none !important;
+                                        visibility: none !important;
+                                    }
+                                    .rec-arrow-right {
+                                        display: none !important;
+                                        visibility: none !important;
+                                    }
+
+                                    .rec-slider-container {
+                                        background-color: transparent !important;
+                                        box-shadow: none !important;
+
+                                        .rec-slider {
+                                            box-shadow: none !important;
+                                            background-color: transparent !important;
+
+                                            .rec-swipable {
+                                                background-color: transparent !important;
+                                                box-shadow: none !important;
+
+                                                .rec-carousel-item {
+                                                    // background-color: transparent !important;
+                                                    // box-shadow: none !important;
+
+                                                    background: rgba(
+                                                        255,
+                                                        255,
+                                                        255,
+                                                        0.6
+                                                    );
+                                                    box-shadow: 0px 0px 74px
+                                                        rgba(39, 17, 10, 0.16);
+
+                                                    .rec-item-wrapper {
+                                                        background-color: transparent !important;
+                                                        box-shadow: none !important;
+
+                                                        div {
+                                                            background-color: transparent !important;
+                                                            box-shadow: none !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .rec-pagination {
+                                    .rec-dot {
+                                    }
+                                    .rec-dot-active {
+                                    }
+                                }
+                            }
+
+                            .rec-item-wrapper {
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+
+                                div {
+                                    background-color: transparent !important;
+                                    box-shadow: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+button.rec-dot {
+    background-color: #d3be88;
+    box-shadow: 0px 0px 14px #d3be88;
+}
+
+button.rec-dot:hover,
+button.rec-dot:active,
+button.rec-dot:focus {
+    background-color: #e3a548;
+    box-shadow: 0px 4px 24px #e3a548;
 }
