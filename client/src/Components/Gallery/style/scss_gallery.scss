@@ -1,0 +1,173 @@
+.gallery_wrapper {
+    width: 100%;
+
+    .gallery_container {
+        width: 1360px;
+        margin: 0 auto;
+        box-sizing: border-box !important;
+
+        @media screen and (max-width: 1359px) {
+            width: 100%;
+        }
+
+        .gallery_container_title {
+            box-sizing: border-box !important;
+            padding: 40px 400px;
+
+            @media screen and (max-width: 1463px) {
+                padding: 40px 200px;
+            }
+            @media screen and (max-width: 1463px) {
+                padding: 30px 100px;
+            }
+            @media screen and (max-width: 863px) {
+                padding: 30px;
+            }
+
+            .gallery_container_title_p {
+                font-family: Roboto;
+                font-size: 48px;
+                font-style: normal;
+                line-height: 56px;
+                letter-spacing: 0em;
+                text-align: center;
+                font-weight: 400;
+
+                @media screen and (max-width: 863px) {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+
+                .gallery_container_title_p_span {
+                    font-weight: 700;
+
+                    @media screen and (max-width: 863px) {
+                        font-size: 30px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+
+        .gallery_container_images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 99%;
+            box-sizing: border-box;
+
+            .gallery_container_images_img {
+                width: 33%;
+
+                @media screen and (max-width: 865px) {
+                    width: 455px;
+                }
+            }
+        }
+
+        .gallery_container_button {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+
+            @media screen and (max-width: 856px) {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                background-color: #f4f4f4;
+                padding: 50px 0;
+            }
+
+            .gallery_container_button_btn {
+                width: 200px;
+                height: 46px;
+                border: 0;
+                outline: none;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+
+                background: linear-gradient(
+                    180deg,
+                    #ffdc83 0%,
+                    #fbd26a 25%,
+                    #c17024 84.9%,
+                    #e3a548 100%
+                );
+
+                &:hover {
+                    background: linear-gradient(
+                        180deg,
+                        #e3a548 0%,
+                        #c17024 25%,
+                        #fbd26a 84.9%,
+                        #ffdc83 100%
+                    );
+                }
+
+                &:active {
+                    background: linear-gradient(
+                        180deg,
+                        #ffdc83 0%,
+                        #fbd26a 25%,
+                        #c17024 84.9%,
+                        #e3a548 100%
+                    );
+                }
+            }
+        }
+    }
+}
+
+.rec-carousel-wrapper {
+    .rec-carousel {
+        .rec-arrow-left {
+            display: none !important;
+            visibility: none !important;
+        }
+        .rec-arrow-right {
+            display: none !important;
+            visibility: none !important;
+        }
+
+        .rec-slider-container {
+            background-color: transparent !important;
+            box-shadow: none !important;
+
+            .rec-slider {
+                box-shadow: none !important;
+                background-color: transparent !important;
+
+                .rec-swipable {
+                    background-color: transparent !important;
+                    box-shadow: none !important;
+
+                    .rec-carousel-item {
+                        // background-color: transparent !important;
+                        // box-shadow: none !important;
+
+                        background: rgba(255, 255, 255, 0.6);
+                        box-shadow: 0px 0px 74px rgba(39, 17, 10, 0.16);
+
+                        .rec-item-wrapper {
+                            background-color: transparent !important;
+                            box-shadow: none !important;
+
+                            div {
+                                background-color: transparent !important;
+                                box-shadow: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

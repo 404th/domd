@@ -1,7 +1,14 @@
+import React from "react";
 import "./style/scss_media.scss";
 import ReactPlayer from "react-player/youtube";
 
 function Media() {
+    let [wSize, setWSize] = React.useState(window.innerWidth);
+
+    window.addEventListener("resize", () => {
+        setWSize(window.innerWidth);
+    });
+
     return (
         <div className="media_wrapper">
             <div className="media_container">
@@ -33,8 +40,8 @@ function Media() {
                             className={"media_container_media_video_ifr"}
                             url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
                             playing={true}
-                            width={  window.innerWidth > 856 ? "100%" : "320px" }
-                            height={ window.innerWidth > 856 ? "100%" : "274px" }
+                            width={wSize > 856 ? "100%" : "320px"}
+                            height={wSize > 856 ? "100%" : "274px"}
                         />
                     </div>
                 </div>

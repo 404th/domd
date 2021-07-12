@@ -1,0 +1,42 @@
+.worth_wrapper {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+
+    .worth_container {
+        width: 1360px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 1375px) {
+            width: 100%;
+        }
+
+        .worth_container_first-div {
+            padding: 40px;
+            box-sizing: border-box;
+
+            .worth_container_first-div_p {
+                font-family: Roboto;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 56px;
+                letter-spacing: 0em;
+                text-align: center;
+
+                .worth_container_first-div_p_span {
+                    font-family: Roboto;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .worth_container_second-div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+}

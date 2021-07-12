@@ -6,15 +6,15 @@ import Ucard from "../Ucard/ucard";
 import Carousel from "react-elastic-carousel";
 
 function Usluga() {
-    const state = {
-        items: [
-            { id: 1, title: <Ucard /> },
-            { id: 2, title: <Ucard /> },
-            { id: 3, title: <Ucard /> },
-            { id: 4, title: <Ucard /> },
-            { id: 5, title: <Ucard /> },
-        ],
-    };
+        const state = {
+            items: [
+                { id: 1, title: <Ucard /> },
+                { id: 2, title: <Ucard /> },
+                { id: 3, title: <Ucard /> },
+                { id: 4, title: <Ucard /> },
+                { id: 5, title: <Ucard /> },
+            ],
+        };
 
     let [wSize, setWSize] = React.useState(window.innerWidth);
 

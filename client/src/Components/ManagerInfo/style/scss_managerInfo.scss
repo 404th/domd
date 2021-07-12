@@ -1,0 +1,30 @@
+.managerInfo_container {
+    width: 303px;
+    min-height: 77px;
+    box-sizing: border-box;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .managerInfo_container_check {
+        .managerInfo_container_check_span {
+            color: #c17024;
+            font-size: 28px;
+        }
+    }
+    .managerInfo_container_info {
+        .managerInfo_container_info_p {
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            font-weight: 400;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    }
+}
